@@ -1,4 +1,10 @@
-# 
+# RestServer
+
+# Inicar  MongoDB
+```
+docker-compose -f docker-compose/docker-compose.yml up -d
+```
+
 
 # Instalar paquetes
 ```
