@@ -25,7 +25,7 @@ process.env.urlDB = urlDB;
 *
 * */
 
-process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+process.env.CADUCIDAD_TOKEN = '24h';
 
 /* TOKEN: SEED DE AUTENTIFICACION*/
 
@@ -33,4 +33,4 @@ process.env.SEED_TOKEN = process.env.SEED_TOKEN || 'secret';
 
 /* GOOGLE CLIENT*/
 
-process.env.GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || 'xxxxxxxxxxxxxxxxxxxxxxxxx';
+process.env.GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || 'XXXXXXXX';
