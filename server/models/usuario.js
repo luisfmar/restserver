@@ -23,7 +23,7 @@ let usuarioSchema = new Schema({
     required: [true, 'El campo password es obligatorio']
   },
   img: {
-    type: Boolean,
+    type: String,
     required: false
   }, // Boolean
   role: {
