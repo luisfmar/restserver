@@ -6,7 +6,7 @@ let app = express();
 
 let Producto = require('../models/producto');
 
-/* Muestra todos los productos */
+/* Muestra todos los producto */
 app.get('/producto', verificaToken, (req, res) => {
   let desde = req.query.desde || 0;
   let limite = req.query.limite || 5;
@@ -55,7 +55,7 @@ app.get('/producto/:id', verificaToken, (req, res) => {
 });
 
 /* Muestra una producto */
-app.get('/productos/buscar/:termino', verificaToken, (req, res) => {
+app.get('/producto/buscar/:termino', verificaToken, (req, res) => {
   let termino = req.params.termino;
   let regex = new RegExp(termino, 'i');// no sensible a mayusculas y minusculas
   Producto.find({ nombre: regex })
